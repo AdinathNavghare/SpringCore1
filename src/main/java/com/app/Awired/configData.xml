@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <context:component-scan base-package="com.app.sterotype"></context:component-scan> -->
+	<bean class="com.app.Awired.Address" name="address1">
+		<property name="city" value="pune"></property>
+		<property name="name" value="Adi"></property>
+		
+	</bean>
+	<bean class="com.app.Awired.Address" name="address">
+		<property name="city" value="namar"></property>
+		<property name="name" value="Adi data"></property>
+		
+	</bean>
+	<bean class="com.app.Awired.Emp" name="emp1" autowire="constructor"></bean>
+	
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean class="com.app.refObject.B" name="bref">
+		<property name="y" value="30"></property>
+
+	</bean>
+	<bean class="com.app.refObject.A" name="aref" p:no="50" p:ob-ref="90">
+	</bean>
+
+
+
+</beans>
